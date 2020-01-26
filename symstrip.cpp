@@ -622,6 +622,8 @@ bool elf64_symstrip( ELF_t *elf, const ST_Opts *opts )
             if ( strlen( errbuf ) > 0 )
                 puts( errbuf );
         }
+        if ( symtb.stab )
+            delete[] symtb.stab;
     }
     SHUT( elf );
     return true;
