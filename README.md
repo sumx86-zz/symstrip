@@ -1,7 +1,7 @@
 # symstrip
 
 ## Usage
-* [dump .symtab]
+* [dump `.symtab`]
 ```
 ⵧ➤ sudo ./symstrip -f $HOME/shell -d
 
@@ -75,7 +75,7 @@
     66: 0x0000000000400390   0      FUNC     GLOBAL   DEFAULT  11   _init
 ```
 
-* [strip .symtab + .strtab]
+* [strip `.symtab` + `.strtab`]
 ```
 ⵧ➤ readelf -S $HOME/shell
     .
@@ -114,7 +114,7 @@
         0000000000000002  0000000000000000  WA       0     0     1
     [27] .comment          PROGBITS         0000000000000000  00001076
         0000000000000035  0000000000000001  MS       0     0     1
-    [28] .shstrtab         STRTAB           0000000000000000  00001905
+    [28] .shstrtab         STRTAB           0000000000000000  000010b0
         000000000000010c  0000000000000000           0     0     1
 
 ```
