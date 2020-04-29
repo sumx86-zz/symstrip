@@ -371,7 +371,6 @@ uint32_t elf64_get_sht_size( ELF_t *elf )
 }
 /*
  * Check for the presence of .symtab and its associated .strtab
- * If not present (probably stripped), return -1, otherwise return its offset within the file
  */
 bool elf64_find_symtab( ELF_t *elf, Symtab_t *symtb )
 {
